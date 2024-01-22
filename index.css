@@ -1,0 +1,96 @@
+:root {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #1B1924;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box {
+    background-color: #444059;
+    color: #8F8F8F;
+    border: 0;
+    border-radius: 8px;
+    height: 100px;
+    width: 320px;
+    resize:none;
+    padding: 10px;
+}
+
+.input-line {
+    background-color: #444059;
+    color: #8F8F8F;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 5px;
+    height: 20px;
+    width: 320px;
+    padding: 10px;
+}
+
+.submit-button {
+    background-color: #28A9F1;
+    color: #04131C;
+    height: 70px;
+    width: 340px;
+    border: 0;
+    border-radius: 8px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.food-list {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: #1B1924;
+    list-style-type: none;
+    width: 330px;
+    padding: 0;
+    margin: 5px;
+}
+
+.food-list > li {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.name-heart {
+    display: flex;
+    justify-content: space-between;
+}
