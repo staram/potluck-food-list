@@ -11,7 +11,7 @@ const foodListInDB = ref(database, "foodList")
 
 const inputFieldEl = document.getElementById("input-field")
 const submitButtonEl = document.getElementById("submit-button")
-const foodListEl = document.getElementById("shopping-list")
+const foodListEl = document.getElementById("food-list")
 
 submitButtonEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value
@@ -28,17 +28,17 @@ onValue(foodListInDB, function(snapshot) {
     if (snapshot.exists()) {
         let itemsArray = Object.entries(snapshot.val())
     
-        clearfoodListEl()
+        clearFoodListEl()
         
         for (let i = 0; i < itemsArray.length; i++) {
             let currentItem = itemsArray[i]
             let currentItemID = currentItem[0]
             let currentItemValue = currentItem[1]
             
-            appendItemTofoodListEl(currentItem)
+            appendItemToFoodListEl(currentItem)
         }    
     } else {
-        foodListEl.innerHTML = "No items here... yet"
+        foodListEl.innerHTML = `<li>No items here... yet</li>`
     }
     
     

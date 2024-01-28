@@ -14,24 +14,25 @@
             <h1>title + image</h1>
 
             <form>
-                <textarea class="input-box"></textarea>
-                <input type="text" class="input-line" placeholder="From"></input>
-                <input type="submit" class="submit-button" value="Submit">
+                <textarea class="input-box" id="input-field"></textarea>
+                <!-- <input type="text" class="input-line" placeholder="From"></input> -->
+                <input type="submit" class="submit-button"
+                id="submit-button"
+                value="Submit">
             </form>
 
             <h2>current list</h2>
 
-            <ul class="food-list">
-                <li class="name-heart">Name <span class="heart">1 🖤</span></li>
-                <li>Message</li>
+            <ul class="food-list" id="food-list">
             </ul>
 
-            <ul class="food-list">
+            <!-- <ul class="food-list">
                 <li class="name-heart">Name <span class="heart">2 🖤</span></li>
                 <li>Message</li>
-            </ul>
+            </ul> -->
+
         </div> <!-- /container -->
 
-        <script src="index.js"></script>
+        <script src="index.js" type="module"></script>
     </body>
 </html>
